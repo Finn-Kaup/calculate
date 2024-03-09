@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Calculate</title>
+</head>
+<body>
+
+    <main>
+        <div class="content" onclick="umfangResult()">
+            <p>Kreis Umfang</p>
+            <div class="contentInternal">
+                <input type="text" id="umfangInput" placeholder="Radius" onkeydown="umfangResult()">
+                <input type="text" id="umfangOutput" placeholder="Umfang" >
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Kreis Fläche</p>
+            <div class="contentInternal">
+                <input type="text" id="flächeInput" placeholder="Radius" onkeydown="flächeResult()" >
+                <input type="text" id="flächeOutput" placeholder="Fläche">
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
